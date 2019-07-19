@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Calculator</title>
+</head>
+
+<body>
+	<main>
+		<section class="calculator">
+			<div class="top">
+        <input type="text" id="display" placeholder="0" onblur="this.focus()" autofocus /> 
+        <button id="giveResult">=</button>
+			</div>
+      <div id="memory" style="display: grid; grid-template-columns: repeat(5, 1fr); grid-gap: 1px; margin-bottom: 1px;">
+        <button id="memorySave" style="background: #8EA604">MS</button>
+        <button id="memoryClear" style="background: #BF3100">MC</button>
+        <button id="memoryRead" style="background: #CEC075">MR</button>
+        <button id="memoryPlus" style="background: #CEC075">M+</button>
+        <button id="memoryMinus" style="background: #CEC075">M-</button>
+      </div>
+			<div class="buttons">
+
+				<button data="sin(">sin</button>
+				<button data="cos(">cos</button>
+				<button data="tan(">tan</button>
+				<button data="log(">ln</button>
+				<button data="sqrt(">√</button>
+
+				<button style="background: #ADBABD" data="7">7</button>
+				<button style="background: #ADBABD" data="8">8</button>
+				<button style="background: #ADBABD" data="9">9</button>
+				<button data="!">!</button>
+				<button data="^">^</button>
+
+				<button style="background: #ADBABD" data="4">4</button>
+				<button style="background: #ADBABD" data="5">5</button>
+				<button style="background: #ADBABD" data="6">6</button>
+				<button data="*">*</button> 
+				<button data="/">÷</button>
+
+				<button style="background: #ADBABD" data="1">1</button>
+				<button style="background: #ADBABD" data="2">2</button>
+				<button style="background: #ADBABD" data="3">3</button>
+				<button data="+">+</button>
+				<button data="-">-</button>
+
+				<button  data=".">.</button>
+				<button style="background: #ADBABD" data="0">0</button>
+				<button data="(">(</button>
+				<button data=")">)</button>
+				<button data="pi">π</button>
+			</div>
+			<button id="clear" style="margin-top: 1px">Очистить</button>
+		</section>
+	</main>
+
+  <script src="math.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

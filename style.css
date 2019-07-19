@@ -1,0 +1,59 @@
+main {
+    width: 100vw;   
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+}
+
+#memory{
+    width: 25vw;
+    height: 5vh;
+}
+
+#giveResult{
+    width: 25%;
+    height: 100%;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1px;
+    height: 50vh;
+    width: 25vw;
+}
+
+button {
+    border: none;
+    font-size: 20px;
+}
+
+button:hover {
+    background: gray !important;
+}
+
+input {
+    padding: 0 5px;
+    height: 100%;
+    width: 100%;
+    border-radius: 1px;
+    border: none;
+    text-anchor: end;
+    font-size: 20px;
+}
+
+.top {
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.top button {
+    height: 40px;
+}
